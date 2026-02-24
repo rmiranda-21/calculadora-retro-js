@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora RM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculadora">
+        <input type="text" id="display" readonly placeholder="0">
+
+        <div class="buttons">
+            <button onclick="limparVisor()" class="btn-clear">C</button>
+            <button onclick="aparecerNoVisor('/')">/</button>
+            <button onclick="aparecerNoVisor('*')">×</button>
+            <button onclick="apagarUltimo()">DEL</button>
+
+            <button onclick="aparecerNoVisor('7')">7</button>
+            <button onclick="aparecerNoVisor('8')">8</button>
+            <button onclick="aparecerNoVisor('9')">9</button>
+            <button onclick="aparecerNoVisor('-')" class="btn-operator">-</button>
+
+            <button onclick="aparecerNoVisor('4')">4</button>
+            <button onclick="aparecerNoVisor('5')">5</button>
+            <button onclick="aparecerNoVisor('6')">6</button>
+            <button onclick="aparecerNoVisor('+')" class="btn-operator">+</button>
+
+            <button onclick="aparecerNoVisor('1')">1</button>
+            <button onclick="aparecerNoVisor('2')">2</button>
+            <button onclick="aparecerNoVisor('3')">3</button>
+            <button onclick="calcular()" class="btn-equal">=</button>
+
+            <button onclick="aparecerNoVisor('0')" class="btn-zero">0</button>
+            <button onclick="aparecerNoVisor('.')">.</button>
+        </div>
+    </div>
+<br>
+    <footer>
+    Desenvolvido por Robson Miranda
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Fundo que lembra uma mesa de escritório antiga */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #556677; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* O corpo da calculadora: Bege clássico e bordas chanfradas */
+.calculadora {
+    background-color: #c0c0c0; /* Cinza clássico Windows 95 */
+    padding: 15px;
+    border: 4px solid;
+    border-color: #fff #808080 #808080 #fff; /* Efeito 3D de relevo */
+    width: 280px;
+}
+
+/* O visor: Estilo LCD antigo (verde acinzentado) */
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-bottom: 15px;
+    padding: 5px;
+    background-color: #94a394; /* Cor de tela LCD desligada */
+    color: #1a1d1a;
+    border: 3px inset #808080; /* Efeito de profundidade para dentro */
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+/* A grade de botões */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+/* Botões quadrados com efeito de "apertar" */
+button {
+    height: 45px;
+    background-color: #c0c0c0;
+    border: 3px solid;
+    border-color: #fff #808080 #808080 #fff; /* Efeito de botão saltado */
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Efeito visual de clique (botão afundando) */
+button:active {
+    border-color: #808080 #fff #fff #808080;
+    padding: 2px 0 0 2px;
+}
+
+/* Cores para funções específicas no estilo antigo */
+.btn-clear {
+    color: #a80000; /* Vermelho escuro clássico */
+}
+
+.btn-equal {
+    background-color: #808080;
+    color: white;
+}
+
+.btn-operator {
+    background-color: #d0d0d0;
+}
